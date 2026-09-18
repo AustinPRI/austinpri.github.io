@@ -15,7 +15,6 @@
   --color-accent: #3D5A80;
   /* Texas sienna/redbud — links, CTAs */
   --color-accent-dark: #293241;
-  /* live-oak sage — secondary accent */
   --color-line: #d9cfba;
   /* hairline rule color */
   --color-white: #FFFDF8;
@@ -355,14 +354,22 @@ p {
   border: 1px solid var(--color-line);
   border-radius: 6px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .card-photo {
   aspect-ratio: 1;
+  width: 100%;
+  overflow: hidden;
 }
 
 .card-body {
   padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .card-role {
@@ -373,6 +380,13 @@ p {
   letter-spacing: 0.06em;
   margin-bottom: 6px;
   display: block;
+}
+
+.card-email {
+  margin-top: auto;
+  padding-top: 16px;
+  border-top: var(--color-line) 1px solid;
+  font-size: 0.85rem;
 }
 
 /* Stat strip */
